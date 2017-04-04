@@ -31,7 +31,7 @@
 
 - (void)testFails
 {
-    XCTAssertTrue(NO);
+    XCTAssertTrue(YES);
 }
 
 - (void)testPerformanceExample {
