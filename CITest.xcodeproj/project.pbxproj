@@ -14,6 +14,7 @@
 		0AE52AFF1E9381860076009E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE52AFD1E9381860076009E /* Main.storyboard */; };
 		0AE52B011E9381860076009E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE52B001E9381860076009E /* Assets.xcassets */; };
 		0AE52B041E9381860076009E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE52B021E9381860076009E /* LaunchScreen.storyboard */; };
+		0AE52B121E9392AE0076009E /* CITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE52B111E9392AE0076009E /* CITestTests.m */; };
 		1BDA07FFEECBD3CDC0474AB8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61231280C07E9683B4AED992 /* QuartzCore.framework */; };
 		3ECC78AF7E5831ADB731EC6A /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ECA66BD8695E2E91864D19 /* BuddyBuildSDK.framework */; };
 		47C11554F8BB78D4DA660A23 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F5340CD07767094F94552 /* AVFoundation.framework */; };
@@ -23,6 +24,16 @@
 		88B25DC4E863006FF74DC3B7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6F983730665A6AC542D43 /* CoreTelephony.framework */; };
 		8F72D8A870436882F9EBBEEE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C8BA19BE39A98EDC963EA /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AE52B141E9392AE0076009E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE52AE91E9381860076009E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE52AF01E9381860076009E;
+			remoteInfo = CITest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0AE52AF11E9381860076009E /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,8 +46,11 @@
 		0AE52B001E9381860076009E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE52B031E9381860076009E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE52B051E9381860076009E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE52B0F1E9392AE0076009E /* CITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE52B111E9392AE0076009E /* CITestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CITestTests.m; sourceTree = "<group>"; };
+		0AE52B131E9392AE0076009E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF6F983730665A6AC542D43 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		45ECA66BD8695E2E91864D19 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		45ECA66BD8695E2E91864D19 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		61231280C07E9683B4AED992 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		76D8E6B2B238FA869A86B34F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AD3C8BA19BE39A98EDC963EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -63,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AE52B0C1E9392AE0076009E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				0AE52AF31E9381860076009E /* CITest */,
+				0AE52B101E9392AE0076009E /* CITestTests */,
 				0AE52AF21E9381860076009E /* Products */,
 				E13807B910A47DDB95C4CB66 /* Frameworks */,
 			);
@@ -79,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0AE52AF11E9381860076009E /* CITest.app */,
+				0AE52B0F1E9392AE0076009E /* CITestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +128,15 @@
 				0AE52AF51E9381860076009E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AE52B101E9392AE0076009E /* CITestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE52B111E9392AE0076009E /* CITestTests.m */,
+				0AE52B131E9392AE0076009E /* Info.plist */,
+			);
+			path = CITestTests;
 			sourceTree = "<group>";
 		};
 		E13807B910A47DDB95C4CB66 /* Frameworks */ = {
@@ -143,6 +175,24 @@
 			productReference = 0AE52AF11E9381860076009E /* CITest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0AE52B0E1E9392AE0076009E /* CITestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE52B181E9392AE0076009E /* Build configuration list for PBXNativeTarget "CITestTests" */;
+			buildPhases = (
+				0AE52B0B1E9392AE0076009E /* Sources */,
+				0AE52B0C1E9392AE0076009E /* Frameworks */,
+				0AE52B0D1E9392AE0076009E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE52B151E9392AE0076009E /* PBXTargetDependency */,
+			);
+			name = CITestTests;
+			productName = CITestTests;
+			productReference = 0AE52B0F1E9392AE0076009E /* CITestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +206,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D54ZA2KT62;
 						ProvisioningStyle = Automatic;
+					};
+					0AE52B0E1E9392AE0076009E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D54ZA2KT62;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AE52AF01E9381860076009E;
 					};
 				};
 			};
@@ -173,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				0AE52AF01E9381860076009E /* CITest */,
+				0AE52B0E1E9392AE0076009E /* CITestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +242,13 @@
 				0AE52B041E9381860076009E /* LaunchScreen.storyboard in Resources */,
 				0AE52B011E9381860076009E /* Assets.xcassets in Resources */,
 				0AE52AFF1E9381860076009E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE52B0D1E9392AE0076009E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +265,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AE52B0B1E9392AE0076009E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE52B121E9392AE0076009E /* CITestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AE52B151E9392AE0076009E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE52AF01E9381860076009E /* CITest */;
+			targetProxy = 0AE52B141E9392AE0076009E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0AE52AFD1E9381860076009E /* Main.storyboard */ = {
@@ -343,6 +423,32 @@
 			};
 			name = Release;
 		};
+		0AE52B161E9392AE0076009E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D54ZA2KT62;
+				INFOPLIST_FILE = CITestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.pricetech.CITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest.app/CITest";
+			};
+			name = Debug;
+		};
+		0AE52B171E9392AE0076009E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D54ZA2KT62;
+				INFOPLIST_FILE = CITestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.pricetech.CITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest.app/CITest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,6 +466,15 @@
 			buildConfigurations = (
 				0AE52B091E9381860076009E /* Debug */,
 				0AE52B0A1E9381860076009E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE52B181E9392AE0076009E /* Build configuration list for PBXNativeTarget "CITestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE52B161E9392AE0076009E /* Debug */,
+				0AE52B171E9392AE0076009E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
